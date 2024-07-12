@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="mortgage-calculator">
+          <div class="top-section">
+            <h1>Mortgage Calculator</h1>
+            <button class="clear-btn">Clear All</button>
+          </div>
+          <form class="form" method="post">
+            <label for="amount" class="amount-label">Mortgage Amount</label>
+            <div class="form-input-group">
+              <span class="symbol">£</span>
+              <input type="number" name="amount" id="amount" required />
+            </div>
+
+            <div class="two-col">
+              <div class="form-col">
+                <div class="form-input-group"></div>
+                <label for="years" class="years-label">Loan Term (Years)</label>
+                <span class="symbol symbol-years">Years</span>
+                <input type="number" name="years" id="years" required />
+              </div>
+              <div class="form-col">
+                <label for="interest" class="interest-label"
+                  >Interest Rate</label
+                >
+                <span class="symbol symbol-interest">%</span>
+                <input
+                  type="number"
+                  name="interest"
+                  id="interest"
+                  step="0.01"
+                />
+              </div>
+            </div>
+            <fieldset class="mortgage-type">
+              <label class="fieldset-title-label">Mortgage Type</label>
+              <div class="form-group">
+                <input
+                  required
+                  type="radio"
+                  name="type"
+                  id="repayment"
+                  value="repayment"
+                />
+                <label for="repayment" class="repayment-label">Repayment</label>
+              </div>
+              <div>
+                <div class="form-group">
+                  <input
+                    required
+                    type="radio"
+                    name="type"
+                    id="interest-only"
+                    value="interest"
+                  />
+                  <label for="interest-only" class="interest-only-label"
+                    >Interest Only</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+            <button class="calc-button" type="submit">
+              <img
+                src="assets/images/icon-calculator.svg"
+                alt="Calculator Icon"
+              />Calculate Repayments
+            </button>
+          </form>
+        </div>
+        <div class="results">
+          <img
+            src="assets\images\illustration-empty.svg"
+            alt="Icon Calculator"
+          />
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click 'calculate repayments' to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js" defer></script>
+  </body>
+</html>
