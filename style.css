@@ -34,10 +34,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   flex: 1;
-}
-
-.mortgage-calculator,
-.results {
   padding: 1.75rem;
 }
 
@@ -100,8 +96,8 @@ input[type="number"] {
 }
 
 input[type="number"]::after {
-  content: "£"; /* Content to be displayed */
-  margin-right: 0.5em; /* Space between pound sign and input */
+  content: "£";
+  margin-right: 0.5em;
   color: black;
 }
 
@@ -290,11 +286,6 @@ fieldset .form-group label {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-  }
-
-  .results,
-  .mortgage-calculator {
-    flex: 1;
   }
 
   .results {
